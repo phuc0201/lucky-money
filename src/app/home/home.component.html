@@ -6,10 +6,9 @@
     <div class="lucky-money-cover absolute left-0 right-0 top-0 h-[15%] shadow-xl rounded-b-[100px] bg-[#df2e3a] z-50"
       [class.open]="isOpen">
     </div>
-    <div class="money absolute w-[85%] top-0 h-auto z-10" [class.open]="isOpen">
-      <img src="assets/img/money-1.png" class="w-full h-auto">
+    <div class="money absolute max-w-[85%] top-0 h-auto z-10" [class.open]="isOpen">
+      <img [src]="imageMoney" class="w-auto h-[90%]">
     </div>
-
     <div
       class="lucky-money relative w-full h-full rounded-b-[20px] bg-[#ea4450] shadow-2xl"
       [class.open]="isOpen" [ngClass]="isOpen? 'z-30' : 'z-30'">
@@ -19,11 +18,3 @@
     </div>
   </div>
 </div>
-<!-- <div
-      class="absolute left-0 right-0 top-0 border-[50px] border-solid border-red-300 border-x-transparent border-b-transparent z-10 overflow-hidden">
-
-    </div> -->
-<!-- <div class="absolute left-0 right-0 top-0 h-[10%] bg-[#b65860] z-20 flex justify-center">
-      <div class="money absolute w-[85%] top-full h-[300px] bg-black z-20" [class.open]="isOpen">
-      </div>
-    </div> -->

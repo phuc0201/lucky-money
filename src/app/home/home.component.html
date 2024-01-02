@@ -2,10 +2,18 @@
   <img src="assets/img/lantern.png" alt="" class="absolute md:w-[200px] w-[100px] top-0 left-0 z-10">
   <img src="assets/img/lantern.png" alt="" class="absolute md:w-[200px] w-[100px] top-0 right-0 z-10">
   <div
-    class=" lucky-money relative sm:w-[400px] sm:h-[700px] w-[300px] h-[500px] rounded-[20px] bg-[#ea4450] shadow-2xl overflow-hidden"
+    class="lucky-money relative sm:w-[400px] sm:h-[700px] w-[300px] h-[500px] rounded-b-[20px] bg-[#ea4450] shadow-2xl"
     [class.open]="isOpen">
+    <!-- <div
+      class="absolute left-0 right-0 top-0 border-[50px] border-solid border-red-300 border-x-transparent border-b-transparent z-10 overflow-hidden">
+
+    </div> -->
+    <!-- <div class="absolute left-0 right-0 top-0 h-[10%] bg-[#b65860] z-20 flex justify-center">
+      <div class="money absolute w-[85%] top-full h-[300px] bg-black z-20" [class.open]="isOpen">
+      </div>
+    </div> -->
     <div
-      class="absolute left-0 right-0 top-0 border-[50px] border-solid border-gray-700 border-x-transparent border-b-transparent">
+      class="lucky-money-cover absolute left-0 right-0 top-0 h-[20%] shadow-xl rounded-b-[100px] bg-[#df2e3a] z-10" [class.open]="isOpen">
     </div>
     <img src="assets/img/money.png"
       class="money absolute cursor-pointer w-[100px] h-auto top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"

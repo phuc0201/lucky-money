@@ -2,5 +2,71 @@
   background-image: url("../../assets/img/bg-pattern.png");
 }
 .lucky-money.open {
-  @apply translate-y-14 transition-all
+  @apply translate-y-14 transition-all;
+}
+
+.lucky-money-cover.open {
+  @apply rotate-hor-top;
+}
+
+.money.open {
+  @apply slide-top;
+}
+.rotate-hor-top {
+  -webkit-animation: rotate-hor-top 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)
+    both;
+  animation: rotate-hor-top 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) both;
+}
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes rotate-hor-top {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+@keyframes rotate-hor-top {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
 }

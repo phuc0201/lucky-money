@@ -1,3 +1,6 @@
 .home {
   background-image: url("../../assets/img/bg-pattern.png");
 }
+.lucky-money.open {
+  @apply translate-y-14 transition-all
+}
